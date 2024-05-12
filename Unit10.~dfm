@@ -1,0 +1,204 @@
+object DataModule10: TDataModule10
+  OldCreateOrder = False
+  Left = 1101
+  Top = 380
+  Height = 330
+  Width = 238
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=klient_baza.mdb;Per' +
+      'sist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 32
+    Top = 24
+  end
+  object ADOTable1: TADOTable
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'klient'
+    Left = 32
+    Top = 80
+    object ADOTable1key_klient: TAutoIncField
+      FieldName = 'key_klient'
+      ReadOnly = True
+      Visible = False
+    end
+    object ADOTable1klient_fio: TWideStringField
+      DisplayLabel = #1060#1048#1054' '#1087#1072#1094#1080#1077#1085#1090#1072
+      DisplayWidth = 26
+      FieldName = 'klient_fio'
+      Size = 50
+    end
+    object ADOTable1kdatarogdenia: TWideStringField
+      DisplayLabel = #1044#1072#1090#1072' '#1086#1073#1088#1072#1097#1077#1085#1080#1103
+      DisplayWidth = 15
+      FieldName = 'kdatarogdenia'
+      Size = 50
+    end
+    object ADOTable1k_status: TWideStringField
+      DisplayLabel = #1057#1090#1072#1090#1091#1089
+      DisplayWidth = 12
+      FieldName = 'k_status'
+      Visible = False
+      Size = 50
+    end
+  end
+  object ADOTable2: TADOTable
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    IndexFieldNames = 'klientnumer'
+    MasterFields = 'key_klient'
+    MasterSource = DataSource1
+    TableName = 'klientt'
+    Left = 32
+    Top = 136
+    object ADOTable2k3: TAutoIncField
+      FieldName = 'k3'
+      ReadOnly = True
+      Visible = False
+    end
+    object ADOTable2klientdata: TWideStringField
+      DisplayLabel = #1044#1072#1090#1072
+      DisplayWidth = 10
+      FieldName = 'klientdata'
+      Size = 50
+    end
+    object ADOTable2ktime: TDateTimeField
+      DisplayLabel = #1042#1088#1077#1084#1103
+      DisplayWidth = 6
+      FieldName = 'ktime'
+      DisplayFormat = 'hh:nn'
+      EditMask = '!90:00;1;_'
+    end
+    object ADOTable2kdlityslugi: TWideStringField
+      DisplayLabel = #1084#1080#1085
+      DisplayWidth = 4
+      FieldName = 'kdlityslugi'
+      Size = 50
+    end
+    object ADOTable2kdokkab: TWideStringField
+      DisplayLabel = #1050#1072#1073'.'
+      DisplayWidth = 4
+      FieldName = 'kdokkab'
+      Size = 50
+    end
+    object ADOTable2kdokname: TWideStringField
+      DisplayLabel = #1060#1048#1054' '#1074#1088#1072#1095#1072
+      DisplayWidth = 15
+      FieldName = 'kdokname'
+      Size = 50
+    end
+    object ADOTable2knaimeyslygi: TWideStringField
+      DisplayLabel = #1059#1089#1083#1091#1075#1072
+      DisplayWidth = 20
+      FieldName = 'knaimeyslygi'
+      Size = 50
+    end
+    object ADOTable2stat_uslugi: TWideStringField
+      DisplayLabel = #1057#1090#1072#1090#1091#1089
+      DisplayWidth = 10
+      FieldName = 'stat_uslugi'
+      Size = 255
+    end
+    object ADOTable2kdokprofil: TWideStringField
+      DisplayLabel = #1057#1087#1077#1094#1080#1072#1083#1100#1085#1086#1089#1090#1100
+      DisplayWidth = 10
+      FieldName = 'kdokprofil'
+      Visible = False
+      Size = 50
+    end
+    object ADOTable2klientnumer: TIntegerField
+      FieldName = 'klientnumer'
+      Visible = False
+    end
+    object ADOTable2comment: TWideStringField
+      FieldName = 'comment'
+      Visible = False
+      Size = 50
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 88
+    Top = 80
+  end
+  object DataSource2: TDataSource
+    DataSet = ADOTable2
+    Left = 88
+    Top = 136
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT *'
+      'FROM  klient')
+    Left = 32
+    Top = 192
+    object ADOQuery1key_klient: TAutoIncField
+      FieldName = 'key_klient'
+      ReadOnly = True
+      Visible = False
+    end
+    object ADOQuery1klient_fio: TWideStringField
+      DisplayLabel = #1060#1048#1054' '#1087#1072#1094#1080#1077#1085#1090#1072
+      DisplayWidth = 26
+      FieldName = 'klient_fio'
+      Size = 50
+    end
+    object ADOQuery1kdatarogdenia: TWideStringField
+      DisplayLabel = #1044#1072#1090#1072' '#1086#1073#1088#1072#1097#1077#1085#1080#1103
+      DisplayWidth = 14
+      FieldName = 'kdatarogdenia'
+      Size = 50
+    end
+    object ADOQuery1k_status: TWideStringField
+      FieldName = 'k_status'
+      Visible = False
+      Size = 50
+    end
+  end
+  object DataSource3: TDataSource
+    DataSet = ADOQuery1
+    Left = 96
+    Top = 192
+  end
+  object ADOQuery2: TADOQuery
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT *'
+      'FROM klient, klientt')
+    Left = 32
+    Top = 248
+    object ADOQuery2ktime: TDateTimeField
+      DisplayLabel = #1042#1088#1077#1084#1103
+      DisplayWidth = 6
+      FieldName = 'ktime'
+      DisplayFormat = 'hh:nn'
+      EditMask = '!90:00;1;_'
+    end
+    object ADOQuery2klient_fio: TWideStringField
+      DisplayLabel = #1060#1048#1054' '#1087#1072#1094#1080#1077#1085#1090#1072
+      DisplayWidth = 20
+      FieldName = 'klient_fio'
+      Size = 50
+    end
+    object ADOQuery2stat_uslugi: TWideStringField
+      DisplayLabel = #1057#1090#1072#1090#1091#1089
+      DisplayWidth = 10
+      FieldName = 'stat_uslugi'
+      Size = 255
+    end
+  end
+  object DataSource4: TDataSource
+    DataSet = ADOQuery2
+    Left = 96
+    Top = 248
+  end
+end
