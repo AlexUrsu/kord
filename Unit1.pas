@@ -1086,7 +1086,7 @@ if DataModule10.ADOTable2.RecordCount <> 0 then begin // проверка есть ли что уд
     DataModule8.ADOQuery1.SQL.Add('SELECT ki2, dokdata, doktime, keyyslygi, onameyslygi, dlityslygi, moshyslygi, num1, k1, dokname');
     DataModule8.ADOQuery1.SQL.Add('FROM dokgraf, dokgraff');
     DataModule8.ADOQuery1.SQL.Add('WHERE dokdata ='''+DataModule10.ADOTable2.FieldValues['klientdata']+'''');
-    DataModule8.ADOQuery1.SQL.Add('AND doktime ='''+DataModule10.ADOTable2.FieldValues['ktime']+'''');
+    DataModule8.ADOQuery1.SQL.Add('AND doktime ='''+TimeToStr(DataModule10.ADOTable2.FieldValues['ktime'])+'''');
     DataModule8.ADOQuery1.SQL.Add('AND onameyslygi ='''+DataModule10.ADOTable2.FieldValues['knaimeyslygi']+'''');
     DataModule8.ADOQuery1.SQL.Add('AND num1 = k1');
     DataModule8.ADOQuery1.SQL.Add('AND dokname ='''+DataModule10.ADOTable2.FieldValues['kdokname']+'''');
@@ -1205,6 +1205,7 @@ if Edit1.Text<>'' then
     DataModule8.ADOTable1.Filtered:=True;
   end else
     DataModule8.ADOTable1.Filtered:=False;
+if DataModule8.ADOTable1.RecordCount<>0 then Form1.BitBtn1.Click;
 end;
 
 procedure TForm1.Edit1KeyPress(Sender: TObject; var Key: Char);
