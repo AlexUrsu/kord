@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 1421
-  Top = 33
-  Width = 1078
-  Height = 769
+  Left = 1411
+  Top = 131
+  Width = 1090
+  Height = 681
   Color = clBtnFace
   Constraints.MinHeight = 600
   Constraints.MinWidth = 800
@@ -20,8 +20,8 @@ object Form1: TForm1
   object Panel4: TPanel
     Left = 0
     Top = 68
-    Width = 1062
-    Height = 663
+    Width = 1074
+    Height = 575
     Align = alClient
     BevelOuter = bvNone
     Caption = 'Panel4'
@@ -29,24 +29,24 @@ object Form1: TForm1
     Visible = False
     OnMouseMove = Panel8MouseMove
     DesignSize = (
-      1062
-      663)
+      1074
+      575)
     object Panel25: TPanel
-      Left = 699
+      Left = 711
       Top = 0
       Width = 363
-      Height = 663
+      Height = 575
       Align = alRight
       Caption = 'Panel25'
       TabOrder = 3
       DesignSize = (
         363
-        663)
+        575)
       object DBGrid8: TDBGrid
         Left = 16
         Top = 40
         Width = 337
-        Height = 614
+        Height = 521
         Anchors = [akLeft, akTop, akBottom]
         DataSource = DataModule7.DataSource4
         Font.Charset = RUSSIAN_CHARSET
@@ -87,7 +87,7 @@ object Form1: TForm1
       Left = 0
       Top = 0
       Width = 169
-      Height = 663
+      Height = 575
       Align = alLeft
       TabOrder = 0
       OnMouseMove = Panel8MouseMove
@@ -1049,7 +1049,7 @@ object Form1: TForm1
     object Panel9: TPanel
       Left = 168
       Top = 0
-      Width = 535
+      Width = 547
       Height = 25
       Anchors = [akLeft, akTop, akRight]
       BevelInner = bvLowered
@@ -1067,8 +1067,8 @@ object Form1: TForm1
     object DBGrid2: TDBGrid
       Left = 184
       Top = 40
-      Width = 511
-      Height = 614
+      Width = 523
+      Height = 523
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DataModule7.DataSource3
       Font.Charset = RUSSIAN_CHARSET
@@ -1090,8 +1090,8 @@ object Form1: TForm1
   object Panel5: TPanel
     Left = 0
     Top = 68
-    Width = 1062
-    Height = 663
+    Width = 1074
+    Height = 575
     Align = alClient
     BevelOuter = bvNone
     Caption = 'Panel5'
@@ -1099,13 +1099,13 @@ object Form1: TForm1
     Visible = False
     OnMouseMove = Panel6MouseMove
     DesignSize = (
-      1062
-      663)
+      1074
+      575)
     object Panel6: TPanel
       Left = 0
       Top = 0
       Width = 129
-      Height = 663
+      Height = 575
       Align = alLeft
       TabOrder = 0
       OnMouseMove = Panel6MouseMove
@@ -2068,8 +2068,8 @@ object Form1: TForm1
     object DBGrid1: TDBGrid
       Left = 144
       Top = 40
-      Width = 911
-      Height = 614
+      Width = 923
+      Height = 529
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DataModule7.DataSource1
       Font.Charset = RUSSIAN_CHARSET
@@ -2090,7 +2090,7 @@ object Form1: TForm1
     object Panel7: TPanel
       Left = 131
       Top = 0
-      Width = 940
+      Width = 952
       Height = 25
       Anchors = [akLeft, akTop, akRight]
       BevelInner = bvLowered
@@ -2110,19 +2110,19 @@ object Form1: TForm1
   object Panel15: TPanel
     Left = 0
     Top = 68
-    Width = 1062
-    Height = 663
+    Width = 1074
+    Height = 575
     Align = alClient
     Caption = 'Panel15'
     TabOrder = 4
     Visible = False
     DesignSize = (
-      1062
-      663)
+      1074
+      575)
     object Bevel3: TBevel
       Left = 752
       Top = 40
-      Width = 297
+      Width = 309
       Height = 33
       Anchors = [akLeft, akTop, akRight]
     end
@@ -2156,7 +2156,7 @@ object Form1: TForm1
     object Panel20: TPanel
       Left = 8
       Top = 0
-      Width = 1059
+      Width = 1071
       Height = 25
       Anchors = [akLeft, akTop, akRight]
       BevelInner = bvLowered
@@ -2173,10 +2173,10 @@ object Form1: TForm1
       OnClick = Panel20Click
     end
     object DBGrid6: TDBGrid
-      Left = 752
+      Left = 760
       Top = 80
-      Width = 297
-      Height = 573
+      Width = 309
+      Height = 481
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DataModule8.DataSource3
       ReadOnly = True
@@ -2192,7 +2192,7 @@ object Form1: TForm1
       Left = 400
       Top = 80
       Width = 345
-      Height = 573
+      Height = 481
       Anchors = [akLeft, akTop, akBottom]
       DataSource = DataModule10.DataSource4
       ReadOnly = True
@@ -2207,7 +2207,7 @@ object Form1: TForm1
       Left = 8
       Top = 248
       Width = 385
-      Height = 406
+      Height = 313
       Anchors = [akLeft, akTop, akBottom]
       DataSource = DataModule8.DataSource1
       TabOrder = 3
@@ -2223,7 +2223,7 @@ object Form1: TForm1
       Top = 40
       Width = 353
       Height = 161
-      Date = 0.548844363423995700
+      Date = 0.675746076391078500
       Font.Charset = RUSSIAN_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -2282,20 +2282,20 @@ object Form1: TForm1
   object Panel16: TPanel
     Left = 0
     Top = 68
-    Width = 1062
-    Height = 663
+    Width = 1074
+    Height = 575
     Align = alClient
     Caption = 'Panel16'
     TabOrder = 5
     Visible = False
     OnMouseMove = Panel23MouseMove
     DesignSize = (
-      1062
-      663)
+      1074
+      575)
     object DBText1: TDBText
       Left = 368
       Top = 56
-      Width = 160
+      Width = 321
       Height = 25
       DataField = 'dokname'
       DataSource = DataModule8.DataSource1
@@ -2337,7 +2337,7 @@ object Form1: TForm1
       Left = 1
       Top = 1
       Width = 192
-      Height = 661
+      Height = 573
       Align = alLeft
       TabOrder = 0
       OnMouseMove = Panel23MouseMove
@@ -3358,7 +3358,7 @@ object Form1: TForm1
         Top = 184
         Width = 169
         Height = 169
-        Date = 40401.548844363420000000
+        Date = 40401.675746087960000000
         Font.Charset = RUSSIAN_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
@@ -3372,7 +3372,7 @@ object Form1: TForm1
     object Panel24: TPanel
       Left = 200
       Top = 0
-      Width = 863
+      Width = 875
       Height = 25
       Anchors = [akLeft, akTop, akRight]
       BevelInner = bvLowered
@@ -3391,8 +3391,8 @@ object Form1: TForm1
     object DBGrid7: TDBGrid
       Left = 208
       Top = 88
-      Width = 847
-      Height = 561
+      Width = 859
+      Height = 502
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DataModule8.DataSource1
       Font.Charset = RUSSIAN_CHARSET
@@ -3414,8 +3414,8 @@ object Form1: TForm1
     object DBGrid9: TDBGrid
       Left = 208
       Top = 88
-      Width = 847
-      Height = 561
+      Width = 859
+      Height = 502
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DataModule8.DataSource3
       ReadOnly = True
@@ -3432,20 +3432,20 @@ object Form1: TForm1
   object Panel3: TPanel
     Left = 0
     Top = 68
-    Width = 1062
-    Height = 663
+    Width = 1074
+    Height = 575
     Align = alClient
     BevelOuter = bvNone
     Caption = 'Panel3'
     TabOrder = 1
     Visible = False
     DesignSize = (
-      1062
-      663)
+      1074
+      575)
     object Panel11: TPanel
       Left = 8
       Top = 0
-      Width = 1063
+      Width = 1075
       Height = 25
       Anchors = [akLeft, akTop, akRight]
       BevelInner = bvLowered
@@ -3464,7 +3464,7 @@ object Form1: TForm1
       Left = 16
       Top = 48
       Width = 370
-      Height = 564
+      Height = 474
       Anchors = [akLeft, akTop, akBottom]
       DataSource = DataModule10.DataSource1
       Font.Charset = RUSSIAN_CHARSET
@@ -3485,8 +3485,8 @@ object Form1: TForm1
     object DBGrid13: TDBGrid
       Left = 400
       Top = 48
-      Width = 649
-      Height = 596
+      Width = 661
+      Height = 513
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataSource = DataModule10.DataSource2
       ReadOnly = True
@@ -3500,12 +3500,12 @@ object Form1: TForm1
     object Panel10: TPanel
       Left = 0
       Top = 0
-      Width = 1062
+      Width = 1074
       Height = 41
       Align = alTop
       TabOrder = 3
       DesignSize = (
-        1062
+        1074
         41)
       object Label7: TLabel
         Left = 16
@@ -3515,7 +3515,7 @@ object Form1: TForm1
         Caption = #1055#1086#1080#1089#1082
       end
       object SpeedButton13: TSpeedButton
-        Left = 904
+        Left = 916
         Top = 8
         Width = 145
         Height = 25
@@ -3622,7 +3622,7 @@ object Form1: TForm1
     end
     object Button2: TButton
       Left = 248
-      Top = 619
+      Top = 536
       Width = 139
       Height = 25
       Anchors = [akLeft, akBottom]
@@ -3632,7 +3632,7 @@ object Form1: TForm1
     end
     object Button3: TButton
       Left = 16
-      Top = 619
+      Top = 536
       Width = 185
       Height = 25
       Anchors = [akLeft, akBottom]
@@ -3644,7 +3644,7 @@ object Form1: TForm1
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1062
+    Width = 1074
     Height = 68
     Align = alTop
     BevelInner = bvLowered
@@ -3653,7 +3653,7 @@ object Form1: TForm1
     object ToolBar1: TToolBar
       Left = 2
       Top = 2
-      Width = 1058
+      Width = 1070
       Height = 64
       ButtonHeight = 63
       Caption = 'ToolBar1'
